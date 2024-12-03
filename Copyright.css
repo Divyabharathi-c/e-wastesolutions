@@ -1,0 +1,15 @@
+/*** copyright Start ***/
+.copyright {
+    background-color: #000; /* Background color */
+}
+
+.copyright a {
+    text-decoration: none !important; /* Force removal of underline */
+    color: white; /* White color for the text */
+}
+
+.copyright a:hover {
+    color: lightgray; /* Optional: Change the color when hovering over the link */
+}
+
+/*** copyright end ***/

@@ -1,0 +1,64 @@
+/* HeaderCarousel.css */
+
+/* Set full height for the carousel section */
+.header-carousel {
+    position: relative;
+    height: 90vh; /* Adjust to 90vh to leave space for the header */
+    overflow: hidden;
+}
+
+/* Style the image to cover the full width and height of the container */
+.header-carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Style for the carousel caption section */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;  /* Ensures text is centered horizontally */
+    color: #44993F; /* Default green color */
+}
+
+/* Heading style */
+.carousel-heading {
+    font-size: 2.5rem; /* Medium font size for the heading */
+    font-weight: 700; /* Bold text for emphasis */
+    color: #44993F; /* Green color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for readability */
+    letter-spacing: 1px; /* Slight letter-spacing */
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center;
+}
+
+/* Optional: Add a darker overlay for better text readability */
+.header-carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);  /* Transparent black overlay */
+    z-index: -1; /* Keeps overlay behind the text */
+}
+
+/* Responsive typography for smaller screens */
+@media (max-width: 767px) {
+    .carousel-heading {
+        font-size: 1.8rem;  
+        /* Smaller heading size for mobile */
+        text-align: center;
+    }
+}

@@ -1,0 +1,111 @@
+/* Default styles for the social media icons */
+.social-icon {
+    background-color: #44993F; /* Green background */
+    padding: 10px; /* Add some padding around the icon */
+    display: inline-flex; /* Ensure the button doesn't stretch */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Fixed width for circular button */
+    height: 40px; /* Fixed height for circular button */
+    border-radius: 50%; /* Make the button circular */
+    border: 2px solid white; /* Transparent border by default */
+    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition */
+    font-size: 20px; /* Adjust font size for social icons */
+    margin-right: 10px; /* Space between icons */
+}
+
+/* Default icon color */
+.social-icon i {
+    color: black; /* Default icon color */
+    font-size: 18px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    background-color: white; /* Change background color to white on hover */
+    color: #44993F; /* Change icon color to green on hover */
+    border-color: white;
+}
+
+.social-icon:hover i {
+    color: #44993F; /* Green color for the icon on hover */
+    border-color: #44993F; /* Add green border when hovered */
+}
+
+/* Styles for main logo and content (Left-aligned logo and icons) */
+.main-logo {
+    font-size: 30px; /* Adjust font size for the logo */
+    font-weight: bold;
+    color: #44993F; /* Green logo color */
+    text-align: left; /* Left-align the logo */
+}
+
+/* Social icons underneath the logo */
+.social-icons {
+    display: flex;
+    flex-direction: row; /* Align icons horizontally */
+    justify-content: flex-start; /* Align icons to the left */
+    margin-top: 10px; /* Space between logo and icons */
+}
+
+/* Styles for quick links (center alignment) */
+.quick-links {
+    display: flex;
+    justify-content: center; /* Center-align the quick links */
+    align-items: center;
+    gap: 20px; /* Space between links */
+    font-size: 18px; /* Font size for quick links */
+    font-weight: 500;
+}
+
+/* Styles for contact info (right-aligned and same font size) */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Right-align contact info */
+    font-size: 18px; /* Same font size for contact info */
+    font-weight: 500;
+    gap: 10px; /* Space between items */
+}
+
+/* Footer background */
+#ftId {
+    display: flex;
+    justify-content: space-between; /* Align sections with space in between */
+    align-items: center; /* Vertically center the sections */
+    background-color: #44993F; /* Green background color */
+    padding: 20px; /* Add padding to footer */
+    color: white; /* Text color for footer */
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .social-icon {
+        width: 35px; /* Slightly smaller icons on smaller screens */
+        height: 35px;
+    }
+
+    .main-logo {
+        font-size: 40px; /* Smaller logo on mobile */
+    }
+
+    .quick-links {
+        font-size: 16px; /* Smaller font for quick links */
+        gap: 15px; /* Adjust gap between links */
+    }
+
+    .contact-info {
+        font-size: 16px; /* Smaller font for contact info */
+    }
+}
+/* Remove underline from Quick Links */
+.no-underline {
+    text-decoration: none !important; /* Prevent underlining */
+  }
+  
+  /* Optional: Style Quick Links with a slight hover effect */
+  .footer-item a:hover {
+    color: #44993F; /* Change color on hover if desired */
+  }
+  
